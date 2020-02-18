@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  
+}
+header {
+  background-color: #65A38B;
+  /**position: relative;**/
+  padding: 10px;
+  /**Make header stay at top while scrolling**/
+  position: fixed;
+  top=0;
+  width:100%;
+  z-index: 1; /**To stop content from showing over header**/
+}
+
+/** Finally made the Nav in line with the image **/
+#header-img {
+  float: left;
+}
+
+#top-bar {
+  height: 200px;
+}
+
+
+
+#nav-list {
+  /** position nav-list at bottom of header **/
+  position: absolute; 
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  margin-left: 200px; /** shift to right of logo **/
+}
+
+
+#nav-list li {
+  list-style-type: none; /** Remove bullets from list **/
+  margin: 0;  
+  padding: 0;
+  float: left; /** Get list elements to go next to eachother **/
+  text-align: center;
+
+}
+
+#nav-list li a:hover {
+  background-color: #327058;
+}
+
+.nav-link {
+  display: block; /**To make the whole area clickable**/
+  padding: 20px 25px;
+  color: black; /** remove default blue link color**/
+  text-align: center;
+  text-decoration: none; /** remove underline hyperlink **/
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #fbe8a6;
+ 
+}
+
+.element {
+  display: flex;
+  flex-direction: vertical;
+  align-content: center;
+  width: 50%;
+  text-align: center;
+  margin: 0px 25%;
+  padding: 25px;
+}
+
+h1,h2, #form {
+  padding: 10px;
+}
+
+#form #email {
+  padding: 5px;
+  max-width: 275px;
+  width: 100%;
+}
+
+ #form #submit {
+  padding: 5px;
+  max-width: 75px;
+  width: 100%; 
+  background-color: #327058;
+}
+
+#features, #pricing, #kit, #how-it-works {
+  padding-top:220px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Just to have a media example, need to learn more about mobile first and how to set stuff up */
+  #header {width: 50%;}
+  .element {width: 25%;}
+}

@@ -1,0 +1,96 @@
+* {
+  font-family: 'Amatic SC', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #a5af8b;
+}
+
+/**welcome-section must fill viewport**/
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #2d283a;
+  color: #d1d7e0;
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 300%;
+}
+
+p {
+  font-size: 1.8em;
+}
+
+/**Mobile first - make projects single column for <680px**/
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 25px;
+  }
+
+/**Projects displayed in 2 columns for desktop **/
+@media screen and (min-width: 680px) {
+   .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+  }
+}
+
+.project-tile {
+  /**background-color: black;**/
+  margin: 50px;
+}
+
+img { 
+  max-width: 100%; 
+  height: auto;
+  border-radius: 50px 50px 50px 50px;
+  border:1px solid black;
+}
+
+#navbar li {
+  list-style-type: none; /** Remove bullets from list **/
+  margin: 0;  
+  padding: 0;
+  float: left; /** Get list elements to go next to eachother **/
+  text-align: center;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0; /**requirement for exercise to have navbar on top **/
+  left: 0;
+  width: 100%;
+}
+
+#navlist {
+  display: flex;
+  margin-right: 2em;
+}
+
+#projects-section {
+  padding: 8px 20px;
+  color: white; /** remove default blue link color**/
+  text-align: center;
+  text-decoration: none; /** remove underline hyperlink **/
+  text-transform: uppercase;
+  font-size: 150%;
+}
+
+#projects-section:hover {
+  background-color: #A09BAD;
+}
+

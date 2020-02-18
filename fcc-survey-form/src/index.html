@@ -1,0 +1,56 @@
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<h1 id="title">Course Feedback</h1>
+<p id="description">Please tell us how we did.</p>
+<form id="survey-form">
+  <div class="survey-item">
+     <label id="name-label" for="name" class="label">Name:</label>
+     <input attribute: type="text" id="name" placeholder="Enter your name" required class="survey-input">
+  </div>
+  <div class="survey-item">
+     <label id="email-label" for="email" class="label">Email:</label>
+     <input attribute: type="email" id="email" placeholder="Enter your email address" required class="survey-input">
+  </div>
+  <div class="survey-item">
+     <label id="number-label" for="age" class="label">Age:</label>
+     <input attribute: type="number" min="0" max="110" id="number" placeholder="Age" required class="survey-input">
+  </div>
+  <div class="survey-item">
+     <label id="dropdown-label" for="dropdown" class="label">Primary reason for attending:</label>
+    <select id="dropdown" class="survey-input">
+      <option disabled value>Select an option</option>
+      <option  value="Fun">Thought it sounded fun</option>
+      <option  value="Learn">To learn something new</option>
+      <option  value="Requirement">Work mandated</option>
+    </select>
+  </div>
+   <div class="survey-item">
+    <label for="rating" class="label">What did you think?</label>
+    <ul style="list-style: none;" class="survey-input">
+       <li><input id="awesome" type="radio" name="rating" class="radio" value="1">Awesome!</li>  
+        <li><input id="ok" type="radio" name="rating" class="radio" value="2">Not too shabby...</li>  
+    <li><input id="yuck" type="radio" name="rating" class="radio" value="3">Ginormous waste of time</li>  
+    </div>
+    <div class="survey-item">
+    <label id="improvements-label" for="improvements" class="label">What would you like to see in future?</label>
+    <ul style="list-style: none;" class="survey-input">
+      <li><input type="checkbox" class="check" name="hands-on" value="1">Hands-on activities</li>
+      <li><input type="checkbox" class="check" name="handouts"value="2">More handouts</li>
+      <li><input type="checkbox" class="check" name="guests"value="3">Guest lectures</li>
+      <li><input type="checkbox" class="check" name="homework" value="4">Practice material to take home</li>
+    </ul>
+   </div>
+   <div class="survey-item">
+     <label id="improvements-label" for="comments" class="label">Additional comments:</label>
+     <textarea id="comments" placeholder="Enter comments here" class="survey-input"></textarea>
+   </div>
+   <div class="survey-item">
+    <button type="submit" id="submit">Submit</button>
+   </div>
+  </form>
+</body>

@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  line-height: 1.5;
+}
+
+#navbar {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  background-color: #f4f4f4; /*#cccccc;*/
+  
+  position: fixed;
+  z-index: 1; /**this made the border show?**/
+  border-right: 1px solid #666666;
+}
+
+main {
+  margin: 0px 25%;
+  padding: 10px;
+  text-align: left;
+  position: relative;
+  width: 75%;
+  background-color: #ffffff;
+}
+
+#nav-list {
+  list-style-type: none;
+}
+
+
+#nav-list a:hover {
+  background-color: #cccccc; /*#666666;*/
+}
+
+.nav-link {
+  display: block; /**To make the whole area clickable**/
+  padding: 20px;
+  color: black; /** remove default blue link color**/
+  text-decoration: none; /** remove underline hyperlink **/
+  border-bottom: 1px solid #666666;
+}
+
+code {
+  background: #f4f4f4;
+  border: 1px solid #cccccc;
+  border-left: 3px solid #f36d33;
+  display: block;
+  max-width: 100%;
+  padding: 1em 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  #navbar ul {
+    /**Need to read about mobile first**/
+  }
+  
+  h1 {
+    padding-top: 20px;
+  }
+  
+  #nav-title
+  {
+    background-color: #f36d33;
+  }
